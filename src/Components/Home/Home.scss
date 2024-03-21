@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.HomeMainDiv{
+    .hero-section{
+        position: relative;
+        overflow: hidden;
+        min-height: 91vh;
+
+        .content{
+            width: 80%;
+            // background-color: red;
+            text-align: center;
+            padding-top: 25%;
+
+            h4{
+                font-size: 30px;
+            }
+
+            h1{
+                font-size: 60px;
+            }
+        }
+        .numbers{
+            position: absolute;
+            top: 60%;
+            left: 90%;
+            .carousNumber{
+                font-weight: 800;
+                font-size: 30px;
+                color: rgb(188, 188, 188);
+                border-bottom: 4px solid white;
+                cursor: pointer;
+                transition: .3s;
+            }
+            .selected {
+                color: #333 !important;
+                // border-bottom: 4px solid orange !important; 
+              }
+            .carousNumber:hover{
+                border-bottom: 4px solid orange;
+                color: rgb(104, 104, 104);
+            }
+        }
+    }
+    .MainLeft{
+        .img{
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+            margin-top: 50px !important;
+            margin: auto;
+            text-align: center;
+            border-radius: 50%;
+            animation: moveUp 1s ease-in-out forwards;
+            background-color: rgb(234, 234, 234);
+            img{
+                width: 50%;
+                text-align: center;
+                margin-top: 40%;
+            }
+            
+        }
+        @keyframes moveUp {
+            from {
+              transform: translateY(100%) !important;
+            }
+            to {
+              transform: translateY(0) !important;
+            }
+          }
+    }
+}
