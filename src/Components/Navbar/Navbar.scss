@@ -29,14 +29,14 @@
             letter-spacing: 1px;
             cursor: pointer;
             &.active {
-                color: black;
+                color: orange;
                 text-decoration: none;
-                border-bottom: 3px solid red;// Change color for the active link
+                // border-bottom: 3px solid orange;// Change color for the active link
             }
           }
           .links:hover,
           select:hover {
-            border-bottom: 3px solid red;
+            border-bottom: 3px solid orange;
           }
         }
       }

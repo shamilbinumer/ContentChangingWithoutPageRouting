@@ -4,6 +4,33 @@
 }
 
 .HomeMainDiv {
+    .row.animating {
+        animation: slide-left-content 0.5s ease-in-out forwards; /* New animation name */
+      }
+    
+      .animating-left {
+        animation: slide-right-image 0.5s ease-in-out forwards; /* New animation name */
+      }
+    
+      @keyframes slide-left-content {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+    
+      @keyframes slide-right-image {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+      
+      
     .hero-section {
         position: relative;
         overflow: hidden;
@@ -57,7 +84,7 @@
             text-align: center;
             border-radius: 50%;
             background-color: rgb(234, 234, 234);
-            animation: moveUp .9s ease-in-out forwards;
+            // animation: moveUp .9s ease-in-out forwards;
 
             img {
                 width: 50%;
