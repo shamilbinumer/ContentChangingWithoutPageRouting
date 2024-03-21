@@ -1,47 +1,54 @@
-.NavbarMainDiv{
-    .main{
-        width: 100%;
-        // height: 80px;
-        padding: 15px;
-        background-color: rgb(234, 234, 234);
-        display: flex;
-        .mainLeft{
-            width: 80%;
-            padding-left: 7%;
-            // padding-top: 9px;
-            .navLinks{
-                display: flex;
-                gap: 20px;
-
-                select{
-                    background-color: transparent;
-                    border: none;
-                    border-bottom: 3px solid rgb(234, 234, 234) ;
-                    font-weight: 700;
-                    letter-spacing: 1px;
-                }
-                select:focus{
-                    outline: none;
-                }
-                .links{
-                    font-size: 17px;
-                    font-weight: 650;
-                    letter-spacing: 1px;
-                    cursor: pointer;
-                }
-                .links:hover,select:hover{
-                    border-bottom: 3px solid red;
-                }
-            }
-        }
-        .mainRight{
-            width: 20%;
-            padding-left: 10%;
-            .loginBtn{
-                font-size: 20px;
-                // text-decoration: none;
+.NavbarMainDiv {
+    .main {
+      width: 100%;
+      padding: 15px;
+      background-color: rgb(234, 234, 234);
+      display: flex;
+  
+      .mainLeft {
+        width: 80%;
+        padding-left: 7%;
+  
+        .navLinks {
+          display: flex;
+          gap: 20px;
+  
+          select {
+            background-color: transparent;
+            border: none;
+            border-bottom: 3px solid rgb(234, 234, 234);
+            font-weight: 700;
+            letter-spacing: 1px;
+          }
+          select:focus {
+            outline: none;
+          }
+          .links {
+            font-size: 17px;
+            font-weight: 650;
+            letter-spacing: 1px;
+            cursor: pointer;
+            &.active {
                 color: black;
+                text-decoration: none;
+                border-bottom: 3px solid red;// Change color for the active link
             }
+          }
+          .links:hover,
+          select:hover {
+            border-bottom: 3px solid red;
+          }
         }
+      }
+      .mainRight {
+        width: 20%;
+        padding-left: 10%;
+  
+        .loginBtn {
+          font-size: 20px;
+          color: black;
+        }
+      }
     }
-}
+  }
+  
