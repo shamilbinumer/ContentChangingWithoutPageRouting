@@ -7,13 +7,9 @@ const Home = () => {
     const [selectedCarousel, setSelectedCarousel] = useState(1);
 
     const handleCarouselClick = (number) => {
+      // window.location.reload()
         setSelectedCarousel(number);
-        // Add animation to image
-        const image = document.querySelector('.img img');
-        image.classList.add('up');
-        setTimeout(() => {
-          image.classList.remove('up');
-        }, 500); // Duration of the transition in milliseconds
+       
       };
 
       const renderCarouselContent = () => {
